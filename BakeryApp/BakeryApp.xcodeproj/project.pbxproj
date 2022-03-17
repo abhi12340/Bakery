@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF16F34927E25F2F00A14728 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF16F34827E25F2F00A14728 /* AppDelegate.swift */; };
+		EF16F34B27E25F2F00A14728 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF16F34A27E25F2F00A14728 /* SceneDelegate.swift */; };
+		EF16F35027E25F2F00A14728 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF16F34E27E25F2F00A14728 /* Main.storyboard */; };
+		EF16F35227E25F3000A14728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF16F35127E25F3000A14728 /* Assets.xcassets */; };
+		EF16F35527E25F3000A14728 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF16F35327E25F3000A14728 /* LaunchScreen.storyboard */; };
+		EF16F36027E25F3000A14728 /* BakeryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF16F35F27E25F3000A14728 /* BakeryAppTests.swift */; };
+		EF16F36A27E25F3000A14728 /* BakeryAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF16F36927E25F3000A14728 /* BakeryAppUITests.swift */; };
+		EF16F36C27E25F3000A14728 /* BakeryAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF16F36B27E25F3000A14728 /* BakeryAppUITestsLaunchTests.swift */; };
+		EF8D2D2D27E3BA0C007A0812 /* BakeryItemMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D2C27E3BA0C007A0812 /* BakeryItemMenuController.swift */; };
+		EF8D2D2F27E3BA77007A0812 /* BakeryItemDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D2E27E3BA77007A0812 /* BakeryItemDetailController.swift */; };
+		EF8D2D3227E3BB76007A0812 /* ChildCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D3127E3BB76007A0812 /* ChildCoordinatorFactory.swift */; };
+		EF8D2D3427E3BC33007A0812 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D3327E3BC33007A0812 /* Coordinator.swift */; };
+		EF8D2D3727E3BEAC007A0812 /* BakeryItemMenuChildCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D3627E3BEAC007A0812 /* BakeryItemMenuChildCoordinator.swift */; };
+		EF8D2D3927E3BEC0007A0812 /* BakeryItemDetailChildCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D3827E3BEC0007A0812 /* BakeryItemDetailChildCoordinator.swift */; };
+		EF8D2D3B27E3C18C007A0812 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D3A27E3C18C007A0812 /* MainCoordinator.swift */; };
+		EF8D2D3E27E3C3EB007A0812 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D3D27E3C3EB007A0812 /* ItemDetail.swift */; };
+		EF8D2D4127E3E02B007A0812 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D4027E3E02B007A0812 /* Observable.swift */; };
+		EF8D2D4327E3E73D007A0812 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D4227E3E73D007A0812 /* NetworkManager.swift */; };
+		EF8D2D4527E3E764007A0812 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D4427E3E764007A0812 /* NetworkError.swift */; };
+		EF8D2D4727E3E7E9007A0812 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D4627E3E7E9007A0812 /* NetworkConstants.swift */; };
+		EF8D2D4927E3E969007A0812 /* BakeryURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D4827E3E969007A0812 /* BakeryURLRequest.swift */; };
+		EF8D2D4B27E3E9C7007A0812 /* HttpMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D4A27E3E9C7007A0812 /* HttpMethods.swift */; };
+		EF8D2D4D27E3EA5D007A0812 /* ItemRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D4C27E3EA5D007A0812 /* ItemRequest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF16F35C27E25F3000A14728 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF16F33D27E25F2F00A14728 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF16F34427E25F2F00A14728;
+			remoteInfo = BakeryApp;
+		};
+		EF16F36627E25F3000A14728 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF16F33D27E25F2F00A14728 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF16F34427E25F2F00A14728;
+			remoteInfo = BakeryApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF16F34527E25F2F00A14728 /* BakeryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BakeryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF16F34827E25F2F00A14728 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF16F34A27E25F2F00A14728 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EF16F34F27E25F2F00A14728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF16F35127E25F3000A14728 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF16F35427E25F3000A14728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF16F35627E25F3000A14728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF16F35B27E25F3000A14728 /* BakeryAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BakeryAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF16F35F27E25F3000A14728 /* BakeryAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakeryAppTests.swift; sourceTree = "<group>"; };
+		EF16F36527E25F3000A14728 /* BakeryAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BakeryAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF16F36927E25F3000A14728 /* BakeryAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakeryAppUITests.swift; sourceTree = "<group>"; };
+		EF16F36B27E25F3000A14728 /* BakeryAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakeryAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EF8D2D2C27E3BA0C007A0812 /* BakeryItemMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakeryItemMenuController.swift; sourceTree = "<group>"; };
+		EF8D2D2E27E3BA77007A0812 /* BakeryItemDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakeryItemDetailController.swift; sourceTree = "<group>"; };
+		EF8D2D3127E3BB76007A0812 /* ChildCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildCoordinatorFactory.swift; sourceTree = "<group>"; };
+		EF8D2D3327E3BC33007A0812 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		EF8D2D3627E3BEAC007A0812 /* BakeryItemMenuChildCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakeryItemMenuChildCoordinator.swift; sourceTree = "<group>"; };
+		EF8D2D3827E3BEC0007A0812 /* BakeryItemDetailChildCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakeryItemDetailChildCoordinator.swift; sourceTree = "<group>"; };
+		EF8D2D3A27E3C18C007A0812 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		EF8D2D3D27E3C3EB007A0812 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
+		EF8D2D4027E3E02B007A0812 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		EF8D2D4227E3E73D007A0812 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EF8D2D4427E3E764007A0812 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		EF8D2D4627E3E7E9007A0812 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		EF8D2D4827E3E969007A0812 /* BakeryURLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakeryURLRequest.swift; sourceTree = "<group>"; };
+		EF8D2D4A27E3E9C7007A0812 /* HttpMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethods.swift; sourceTree = "<group>"; };
+		EF8D2D4C27E3EA5D007A0812 /* ItemRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRequest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF16F34227E25F2F00A14728 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF16F35827E25F3000A14728 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF16F36227E25F3000A14728 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF16F33C27E25F2F00A14728 = {
+			isa = PBXGroup;
+			children = (
+				EF16F34727E25F2F00A14728 /* BakeryApp */,
+				EF16F35E27E25F3000A14728 /* BakeryAppTests */,
+				EF16F36827E25F3000A14728 /* BakeryAppUITests */,
+				EF16F34627E25F2F00A14728 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF16F34627E25F2F00A14728 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF16F34527E25F2F00A14728 /* BakeryApp.app */,
+				EF16F35B27E25F3000A14728 /* BakeryAppTests.xctest */,
+				EF16F36527E25F3000A14728 /* BakeryAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF16F34727E25F2F00A14728 /* BakeryApp */ = {
+			isa = PBXGroup;
+			children = (
+				EF8D2D3F27E3E00B007A0812 /* Observerable */,
+				EF8D2D3C27E3C3C8007A0812 /* Models */,
+				EF8D2D3027E3BA9A007A0812 /* Coordinator */,
+				EF8D2D2927E3B9C2007A0812 /* Controllers */,
+				EF16F37827E25FB900A14728 /* Networking */,
+				EF16F34827E25F2F00A14728 /* AppDelegate.swift */,
+				EF16F34A27E25F2F00A14728 /* SceneDelegate.swift */,
+				EF16F34E27E25F2F00A14728 /* Main.storyboard */,
+				EF16F35127E25F3000A14728 /* Assets.xcassets */,
+				EF16F35327E25F3000A14728 /* LaunchScreen.storyboard */,
+				EF16F35627E25F3000A14728 /* Info.plist */,
+			);
+			path = BakeryApp;
+			sourceTree = "<group>";
+		};
+		EF16F35E27E25F3000A14728 /* BakeryAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF16F35F27E25F3000A14728 /* BakeryAppTests.swift */,
+			);
+			path = BakeryAppTests;
+			sourceTree = "<group>";
+		};
+		EF16F36827E25F3000A14728 /* BakeryAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF16F36927E25F3000A14728 /* BakeryAppUITests.swift */,
+				EF16F36B27E25F3000A14728 /* BakeryAppUITestsLaunchTests.swift */,
+			);
+			path = BakeryAppUITests;
+			sourceTree = "<group>";
+		};
+		EF16F37827E25FB900A14728 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EF8D2D4227E3E73D007A0812 /* NetworkManager.swift */,
+				EF8D2D4427E3E764007A0812 /* NetworkError.swift */,
+				EF8D2D4627E3E7E9007A0812 /* NetworkConstants.swift */,
+				EF8D2D4827E3E969007A0812 /* BakeryURLRequest.swift */,
+				EF8D2D4A27E3E9C7007A0812 /* HttpMethods.swift */,
+				EF8D2D4C27E3EA5D007A0812 /* ItemRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		EF8D2D2927E3B9C2007A0812 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF8D2D2C27E3BA0C007A0812 /* BakeryItemMenuController.swift */,
+				EF8D2D2E27E3BA77007A0812 /* BakeryItemDetailController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EF8D2D3027E3BA9A007A0812 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EF8D2D3527E3BE7C007A0812 /* ChildCoordinators */,
+				EF8D2D3127E3BB76007A0812 /* ChildCoordinatorFactory.swift */,
+				EF8D2D3327E3BC33007A0812 /* Coordinator.swift */,
+				EF8D2D3A27E3C18C007A0812 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		EF8D2D3527E3BE7C007A0812 /* ChildCoordinators */ = {
+			isa = PBXGroup;
+			children = (
+				EF8D2D3627E3BEAC007A0812 /* BakeryItemMenuChildCoordinator.swift */,
+				EF8D2D3827E3BEC0007A0812 /* BakeryItemDetailChildCoordinator.swift */,
+			);
+			path = ChildCoordinators;
+			sourceTree = "<group>";
+		};
+		EF8D2D3C27E3C3C8007A0812 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF8D2D3D27E3C3EB007A0812 /* ItemDetail.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF8D2D3F27E3E00B007A0812 /* Observerable */ = {
+			isa = PBXGroup;
+			children = (
+				EF8D2D4027E3E02B007A0812 /* Observable.swift */,
+			);
+			path = Observerable;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF16F34427E25F2F00A14728 /* BakeryApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF16F36F27E25F3000A14728 /* Build configuration list for PBXNativeTarget "BakeryApp" */;
+			buildPhases = (
+				EF16F34127E25F2F00A14728 /* Sources */,
+				EF16F34227E25F2F00A14728 /* Frameworks */,
+				EF16F34327E25F2F00A14728 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BakeryApp;
+			productName = BakeryApp;
+			productReference = EF16F34527E25F2F00A14728 /* BakeryApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF16F35A27E25F3000A14728 /* BakeryAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF16F37227E25F3000A14728 /* Build configuration list for PBXNativeTarget "BakeryAppTests" */;
+			buildPhases = (
+				EF16F35727E25F3000A14728 /* Sources */,
+				EF16F35827E25F3000A14728 /* Frameworks */,
+				EF16F35927E25F3000A14728 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF16F35D27E25F3000A14728 /* PBXTargetDependency */,
+			);
+			name = BakeryAppTests;
+			productName = BakeryAppTests;
+			productReference = EF16F35B27E25F3000A14728 /* BakeryAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF16F36427E25F3000A14728 /* BakeryAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF16F37527E25F3000A14728 /* Build configuration list for PBXNativeTarget "BakeryAppUITests" */;
+			buildPhases = (
+				EF16F36127E25F3000A14728 /* Sources */,
+				EF16F36227E25F3000A14728 /* Frameworks */,
+				EF16F36327E25F3000A14728 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF16F36727E25F3000A14728 /* PBXTargetDependency */,
+			);
+			name = BakeryAppUITests;
+			productName = BakeryAppUITests;
+			productReference = EF16F36527E25F3000A14728 /* BakeryAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF16F33D27E25F2F00A14728 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					EF16F34427E25F2F00A14728 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					EF16F35A27E25F3000A14728 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = EF16F34427E25F2F00A14728;
+					};
+					EF16F36427E25F3000A14728 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = EF16F34427E25F2F00A14728;
+					};
+				};
+			};
+			buildConfigurationList = EF16F34027E25F2F00A14728 /* Build configuration list for PBXProject "BakeryApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF16F33C27E25F2F00A14728;
+			productRefGroup = EF16F34627E25F2F00A14728 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF16F34427E25F2F00A14728 /* BakeryApp */,
+				EF16F35A27E25F3000A14728 /* BakeryAppTests */,
+				EF16F36427E25F3000A14728 /* BakeryAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF16F34327E25F2F00A14728 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF16F35527E25F3000A14728 /* LaunchScreen.storyboard in Resources */,
+				EF16F35227E25F3000A14728 /* Assets.xcassets in Resources */,
+				EF16F35027E25F2F00A14728 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF16F35927E25F3000A14728 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF16F36327E25F3000A14728 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF16F34127E25F2F00A14728 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF8D2D4D27E3EA5D007A0812 /* ItemRequest.swift in Sources */,
+				EF8D2D4B27E3E9C7007A0812 /* HttpMethods.swift in Sources */,
+				EF8D2D4727E3E7E9007A0812 /* NetworkConstants.swift in Sources */,
+				EF8D2D4327E3E73D007A0812 /* NetworkManager.swift in Sources */,
+				EF8D2D4927E3E969007A0812 /* BakeryURLRequest.swift in Sources */,
+				EF8D2D4127E3E02B007A0812 /* Observable.swift in Sources */,
+				EF8D2D3227E3BB76007A0812 /* ChildCoordinatorFactory.swift in Sources */,
+				EF8D2D3E27E3C3EB007A0812 /* ItemDetail.swift in Sources */,
+				EF8D2D3927E3BEC0007A0812 /* BakeryItemDetailChildCoordinator.swift in Sources */,
+				EF8D2D3B27E3C18C007A0812 /* MainCoordinator.swift in Sources */,
+				EF16F34927E25F2F00A14728 /* AppDelegate.swift in Sources */,
+				EF16F34B27E25F2F00A14728 /* SceneDelegate.swift in Sources */,
+				EF8D2D3727E3BEAC007A0812 /* BakeryItemMenuChildCoordinator.swift in Sources */,
+				EF8D2D2D27E3BA0C007A0812 /* BakeryItemMenuController.swift in Sources */,
+				EF8D2D4527E3E764007A0812 /* NetworkError.swift in Sources */,
+				EF8D2D2F27E3BA77007A0812 /* BakeryItemDetailController.swift in Sources */,
+				EF8D2D3427E3BC33007A0812 /* Coordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF16F35727E25F3000A14728 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF16F36027E25F3000A14728 /* BakeryAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF16F36127E25F3000A14728 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF16F36C27E25F3000A14728 /* BakeryAppUITestsLaunchTests.swift in Sources */,
+				EF16F36A27E25F3000A14728 /* BakeryAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF16F35D27E25F3000A14728 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF16F34427E25F2F00A14728 /* BakeryApp */;
+			targetProxy = EF16F35C27E25F3000A14728 /* PBXContainerItemProxy */;
+		};
+		EF16F36727E25F3000A14728 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF16F34427E25F2F00A14728 /* BakeryApp */;
+			targetProxy = EF16F36627E25F3000A14728 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF16F34E27E25F2F00A14728 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF16F34F27E25F2F00A14728 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF16F35327E25F3000A14728 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF16F35427E25F3000A14728 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF16F36D27E25F3000A14728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF16F36E27E25F3000A14728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF16F37027E25F3000A14728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8LXXZXJ6N8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BakeryApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhishekkumar.BakeryApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF16F37127E25F3000A14728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8LXXZXJ6N8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BakeryApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhishekkumar.BakeryApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF16F37327E25F3000A14728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8LXXZXJ6N8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhishekkumar.BakeryAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BakeryApp.app/BakeryApp";
+			};
+			name = Debug;
+		};
+		EF16F37427E25F3000A14728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8LXXZXJ6N8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhishekkumar.BakeryAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BakeryApp.app/BakeryApp";
+			};
+			name = Release;
+		};
+		EF16F37627E25F3000A14728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8LXXZXJ6N8;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhishekkumar.BakeryAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BakeryApp;
+			};
+			name = Debug;
+		};
+		EF16F37727E25F3000A14728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8LXXZXJ6N8;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhishekkumar.BakeryAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BakeryApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF16F34027E25F2F00A14728 /* Build configuration list for PBXProject "BakeryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF16F36D27E25F3000A14728 /* Debug */,
+				EF16F36E27E25F3000A14728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF16F36F27E25F3000A14728 /* Build configuration list for PBXNativeTarget "BakeryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF16F37027E25F3000A14728 /* Debug */,
+				EF16F37127E25F3000A14728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF16F37227E25F3000A14728 /* Build configuration list for PBXNativeTarget "BakeryAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF16F37327E25F3000A14728 /* Debug */,
+				EF16F37427E25F3000A14728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF16F37527E25F3000A14728 /* Build configuration list for PBXNativeTarget "BakeryAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF16F37627E25F3000A14728 /* Debug */,
+				EF16F37727E25F3000A14728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF16F33D27E25F2F00A14728 /* Project object */;
+}
