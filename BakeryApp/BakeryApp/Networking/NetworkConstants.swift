@@ -9,10 +9,10 @@ import Foundation
 
 struct NetworkConstants {
     
-    static let baseurl = ""
+    static let baseurl = "https://jsonkeeper.com/"
     static let requestHeaderContentTypeValue = "application/json"
     static let requestHeaderContentTypeKey = "Content-Type"
-    static let relativePath = ""
+    static let relativePath = "b/6CG9"
     
     // MARK: - Request Timeout
     static let requestTimeout = 30.0

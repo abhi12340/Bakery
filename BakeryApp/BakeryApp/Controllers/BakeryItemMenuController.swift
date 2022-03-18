@@ -11,17 +11,24 @@ class BakeryItemMenuController: UIViewController {
 
     weak var bakeryItemMenuChildCoordinator : BakeryItemMenuChildCoordinator?
     
+    var viewmodel: ItemMenuViewModel!
+    
+    var itemlist = [Item]()
+    
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
+        viewmodel = ItemMenuViewModel(networkService: NetworkManager.shared)
         super.viewDidLoad()
-        navigationItem.title = "Item Menu"
-        view.backgroundColor = .red
-        let button = UIButton(frame: CGRect(origin: view.center, size: CGSize(width: 150, height: 50)))
-        button.setTitle("Click", for: .normal)
-        view.addSubview(button)
-        button.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
+        view.backgroundColor = .white
+        setupBinding()
+        viewmodel.getItems()
     }
-
-    @objc func buttonTapped(_ sender: UIButton) {
-        bakeryItemMenuChildCoordinator?.presentItemDetailVC(itemName: "Pizza")
+    
+    func setupBinding() {
+        viewmodel.datasource.subscribe { [weak self] result in
+            self?.itemlist = result
+            print(result.map { $0.name })
+        }.disposed(by: disposeBag)
     }
 }

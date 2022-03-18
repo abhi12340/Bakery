@@ -30,6 +30,11 @@
 		EF8D2D4927E3E969007A0812 /* BakeryURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D4827E3E969007A0812 /* BakeryURLRequest.swift */; };
 		EF8D2D4B27E3E9C7007A0812 /* HttpMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D4A27E3E9C7007A0812 /* HttpMethods.swift */; };
 		EF8D2D4D27E3EA5D007A0812 /* ItemRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D4C27E3EA5D007A0812 /* ItemRequest.swift */; };
+		EF8D2D4F27E4AD19007A0812 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D4E27E4AD19007A0812 /* Items.swift */; };
+		EF8D2D5627E4AF03007A0812 /* ItemMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D5527E4AF03007A0812 /* ItemMenuViewModel.swift */; };
+		EF8D2D5E27E4BF21007A0812 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D5D27E4BF21007A0812 /* NetworkProtocol.swift */; };
+		EF8D2D6127E4C13A007A0812 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D6027E4C13A007A0812 /* MockURLProtocol.swift */; };
+		EF8D2D6327E4C178007A0812 /* MockResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D6227E4C178007A0812 /* MockResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +82,11 @@
 		EF8D2D4827E3E969007A0812 /* BakeryURLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakeryURLRequest.swift; sourceTree = "<group>"; };
 		EF8D2D4A27E3E9C7007A0812 /* HttpMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethods.swift; sourceTree = "<group>"; };
 		EF8D2D4C27E3EA5D007A0812 /* ItemRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRequest.swift; sourceTree = "<group>"; };
+		EF8D2D4E27E4AD19007A0812 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		EF8D2D5527E4AF03007A0812 /* ItemMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemMenuViewModel.swift; sourceTree = "<group>"; };
+		EF8D2D5D27E4BF21007A0812 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		EF8D2D6027E4C13A007A0812 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		EF8D2D6227E4C178007A0812 /* MockResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,17 +137,19 @@
 		EF16F34727E25F2F00A14728 /* BakeryApp */ = {
 			isa = PBXGroup;
 			children = (
+				EF8D2D5827E4BBD6007A0812 /* Managers */,
+				EF8D2D5727E4BBCC007A0812 /* Services */,
+				EF16F35627E25F3000A14728 /* Info.plist */,
+				EF8D2D5427E4AEAF007A0812 /* Resources */,
+				EF8D2D5327E4AE9B007A0812 /* View */,
+				EF8D2D5027E4AE54007A0812 /* ViewModel */,
 				EF8D2D3F27E3E00B007A0812 /* Observerable */,
 				EF8D2D3C27E3C3C8007A0812 /* Models */,
 				EF8D2D3027E3BA9A007A0812 /* Coordinator */,
 				EF8D2D2927E3B9C2007A0812 /* Controllers */,
 				EF16F37827E25FB900A14728 /* Networking */,
-				EF16F34827E25F2F00A14728 /* AppDelegate.swift */,
-				EF16F34A27E25F2F00A14728 /* SceneDelegate.swift */,
-				EF16F34E27E25F2F00A14728 /* Main.storyboard */,
-				EF16F35127E25F3000A14728 /* Assets.xcassets */,
-				EF16F35327E25F3000A14728 /* LaunchScreen.storyboard */,
-				EF16F35627E25F3000A14728 /* Info.plist */,
+				EF8D2D5F27E4C0E4007A0812 /* Mocks */,
+				EF8D2D5227E4AE7F007A0812 /* SupportingFIles */,
 			);
 			path = BakeryApp;
 			sourceTree = "<group>";
@@ -162,7 +174,6 @@
 		EF16F37827E25FB900A14728 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				EF8D2D4227E3E73D007A0812 /* NetworkManager.swift */,
 				EF8D2D4427E3E764007A0812 /* NetworkError.swift */,
 				EF8D2D4627E3E7E9007A0812 /* NetworkConstants.swift */,
 				EF8D2D4827E3E969007A0812 /* BakeryURLRequest.swift */,
@@ -205,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				EF8D2D3D27E3C3EB007A0812 /* ItemDetail.swift */,
+				EF8D2D4E27E4AD19007A0812 /* Items.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -215,6 +227,65 @@
 				EF8D2D4027E3E02B007A0812 /* Observable.swift */,
 			);
 			path = Observerable;
+			sourceTree = "<group>";
+		};
+		EF8D2D5027E4AE54007A0812 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF8D2D5527E4AF03007A0812 /* ItemMenuViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EF8D2D5227E4AE7F007A0812 /* SupportingFIles */ = {
+			isa = PBXGroup;
+			children = (
+				EF16F34827E25F2F00A14728 /* AppDelegate.swift */,
+				EF16F34A27E25F2F00A14728 /* SceneDelegate.swift */,
+			);
+			path = SupportingFIles;
+			sourceTree = "<group>";
+		};
+		EF8D2D5327E4AE9B007A0812 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF16F34E27E25F2F00A14728 /* Main.storyboard */,
+				EF16F35327E25F3000A14728 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF8D2D5427E4AEAF007A0812 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF16F35127E25F3000A14728 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EF8D2D5727E4BBCC007A0812 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EF8D2D5D27E4BF21007A0812 /* NetworkProtocol.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EF8D2D5827E4BBD6007A0812 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EF8D2D4227E3E73D007A0812 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		EF8D2D5F27E4C0E4007A0812 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				EF8D2D6027E4C13A007A0812 /* MockURLProtocol.swift */,
+				EF8D2D6227E4C178007A0812 /* MockResponse.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,16 +419,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF8D2D6127E4C13A007A0812 /* MockURLProtocol.swift in Sources */,
 				EF8D2D4D27E3EA5D007A0812 /* ItemRequest.swift in Sources */,
 				EF8D2D4B27E3E9C7007A0812 /* HttpMethods.swift in Sources */,
 				EF8D2D4727E3E7E9007A0812 /* NetworkConstants.swift in Sources */,
+				EF8D2D5627E4AF03007A0812 /* ItemMenuViewModel.swift in Sources */,
 				EF8D2D4327E3E73D007A0812 /* NetworkManager.swift in Sources */,
+				EF8D2D4F27E4AD19007A0812 /* Items.swift in Sources */,
 				EF8D2D4927E3E969007A0812 /* BakeryURLRequest.swift in Sources */,
+				EF8D2D6327E4C178007A0812 /* MockResponse.swift in Sources */,
 				EF8D2D4127E3E02B007A0812 /* Observable.swift in Sources */,
 				EF8D2D3227E3BB76007A0812 /* ChildCoordinatorFactory.swift in Sources */,
 				EF8D2D3E27E3C3EB007A0812 /* ItemDetail.swift in Sources */,
 				EF8D2D3927E3BEC0007A0812 /* BakeryItemDetailChildCoordinator.swift in Sources */,
 				EF8D2D3B27E3C18C007A0812 /* MainCoordinator.swift in Sources */,
+				EF8D2D5E27E4BF21007A0812 /* NetworkProtocol.swift in Sources */,
 				EF16F34927E25F2F00A14728 /* AppDelegate.swift in Sources */,
 				EF16F34B27E25F2F00A14728 /* SceneDelegate.swift in Sources */,
 				EF8D2D3727E3BEAC007A0812 /* BakeryItemMenuChildCoordinator.swift in Sources */,

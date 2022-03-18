@@ -42,7 +42,8 @@ enum ItemRequest: URLRequestConvertible {
         }
         
         var urlRequest = URLRequest(url: url, cachePolicy:
-                                            .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 10.0)
+                                            .reloadIgnoringLocalAndRemoteCacheData,
+                                    timeoutInterval: 10.0)
         urlRequest.httpMethod = method.rawValue
         urlRequest.allHTTPHeaderFields = httpHeader
         try encode(urlRequest: &urlRequest, with: params)

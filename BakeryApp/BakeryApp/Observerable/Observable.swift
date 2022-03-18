@@ -87,7 +87,7 @@ class Variable<Element>: ObservableType, Disposable {
         self.lock.unlock()
     }
     
-    func subscribe(on: @escaping (DataType) -> Void) -> Disposable {
+    func subscribe(on: @escaping SubscriptionHandler) -> Disposable {
         self.lock.lock()
         defer { lock.unlock() }
         observers.append(on)

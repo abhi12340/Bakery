@@ -7,13 +7,11 @@
 
 import Foundation
 
-final class NetworkManager {
+final class NetworkManager: NetworkProtocol {
     
     static let shared = NetworkManager()
     
-    private init() {
-        
-    }
+    private init() {}
     
     private let sessionManager: URLSession = {
         let config = URLSessionConfiguration.default
@@ -26,7 +24,7 @@ final class NetworkManager {
     private var task: URLSessionTask?
     
     func request<T: Codable>(routerRequest: URLRequestConvertible, type: T.Type,
-                    completionHandler: @escaping (Result<T, NetworkError>) -> ()) {
+                    completionHandler: @escaping (Result<T, NetworkError>) -> Void) {
         do {
             let request = try routerRequest.asURLRequest()
             task = sessionManager.dataTask(with: request) { data, response, error in
