@@ -27,6 +27,7 @@ class BakeryItemDetailController: UIViewController {
         $0.dataSource = self
         $0.delegate = self
         $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.showsVerticalScrollIndicator = false
         return $0
     }(UITableView())
     
@@ -74,9 +75,8 @@ extension BakeryItemDetailController: UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let dataSource = viewmodel.getDatasource()
-        var headerlabel = UILabel(frame: CGRect(origin: .zero,
-                                                size: CGSize(width: tableView.frame.width, height: 40))
-                                    .inset(by: UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 2)))
+        var headerlabel = PaddingLabel()
+        headerlabel.textAlignment = .justified
         headerlabel.font = UIFont.boldSystemFont(ofSize: 16)
         headerlabel.text = dataSource[section].title
         headerlabel.backgroundColor = .systemGray6
@@ -90,7 +90,7 @@ extension BakeryItemDetailController: UITableViewDataSource, UITableViewDelegate
         return 40
     }
     
-    private func addTapGesture(_ headerView: inout UILabel, section: Int) {
+    private func addTapGesture(_ headerView: inout PaddingLabel, section: Int) {
         let tapgesture = UITapGestureRecognizer(target: self, action: #selector(sectionHeaderTapped(_:)))
         headerView.addGestureRecognizer(tapgesture)
         tapgesture.view?.tag = section

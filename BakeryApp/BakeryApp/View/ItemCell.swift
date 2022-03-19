@@ -54,6 +54,7 @@ class ItemCell: UICollectionViewCell {
     lazy var backgroundImageView: UIImageView = {
         $0.clipsToBounds = true
         $0.contentMode = .scaleAspectFill
+        $0.layer.cornerRadius = 15
         return $0
     }(UIImageView(image: UIImage(named: "bakery")!))
     
@@ -79,6 +80,7 @@ extension ItemCell {
     private func setupview() {
         self.dropShadow()
         backgroundView = backgroundImageView
+        layer.cornerRadius = 15
         addSubview(stackview)
         addSubview(button)
         setupConstraints()
