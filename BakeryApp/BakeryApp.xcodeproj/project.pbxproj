@@ -35,6 +35,11 @@
 		EF8D2D5E27E4BF21007A0812 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D5D27E4BF21007A0812 /* NetworkProtocol.swift */; };
 		EF8D2D6127E4C13A007A0812 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D6027E4C13A007A0812 /* MockURLProtocol.swift */; };
 		EF8D2D6327E4C178007A0812 /* MockResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D6227E4C178007A0812 /* MockResponse.swift */; };
+		EF8D2D6527E54103007A0812 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D6427E54103007A0812 /* ItemCell.swift */; };
+		EF8D2D6827E541FD007A0812 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D6727E541FD007A0812 /* UIView + Extension.swift */; };
+		EF8D2D6A27E5B36B007A0812 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D6927E5B36B007A0812 /* PaddingLabel.swift */; };
+		EF8D2D6C27E5BB06007A0812 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D6B27E5BB06007A0812 /* Utility.swift */; };
+		EF8D2D6E27E5C28A007A0812 /* ItemCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D6D27E5C28A007A0812 /* ItemCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +92,11 @@
 		EF8D2D5D27E4BF21007A0812 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
 		EF8D2D6027E4C13A007A0812 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		EF8D2D6227E4C178007A0812 /* MockResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResponse.swift; sourceTree = "<group>"; };
+		EF8D2D6427E54103007A0812 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		EF8D2D6727E541FD007A0812 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		EF8D2D6927E5B36B007A0812 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		EF8D2D6B27E5BB06007A0812 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		EF8D2D6D27E5C28A007A0812 /* ItemCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +147,7 @@
 		EF16F34727E25F2F00A14728 /* BakeryApp */ = {
 			isa = PBXGroup;
 			children = (
+				EF8D2D6627E541E3007A0812 /* Extensions */,
 				EF8D2D5827E4BBD6007A0812 /* Managers */,
 				EF8D2D5727E4BBCC007A0812 /* Services */,
 				EF16F35627E25F3000A14728 /* Info.plist */,
@@ -233,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				EF8D2D5527E4AF03007A0812 /* ItemMenuViewModel.swift */,
+				EF8D2D6D27E5C28A007A0812 /* ItemCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -242,6 +254,7 @@
 			children = (
 				EF16F34827E25F2F00A14728 /* AppDelegate.swift */,
 				EF16F34A27E25F2F00A14728 /* SceneDelegate.swift */,
+				EF8D2D6B27E5BB06007A0812 /* Utility.swift */,
 			);
 			path = SupportingFIles;
 			sourceTree = "<group>";
@@ -251,6 +264,8 @@
 			children = (
 				EF16F34E27E25F2F00A14728 /* Main.storyboard */,
 				EF16F35327E25F3000A14728 /* LaunchScreen.storyboard */,
+				EF8D2D6427E54103007A0812 /* ItemCell.swift */,
+				EF8D2D6927E5B36B007A0812 /* PaddingLabel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -286,6 +301,14 @@
 				EF8D2D6227E4C178007A0812 /* MockResponse.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		EF8D2D6627E541E3007A0812 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF8D2D6727E541FD007A0812 /* UIView + Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,14 +453,19 @@
 				EF8D2D6327E4C178007A0812 /* MockResponse.swift in Sources */,
 				EF8D2D4127E3E02B007A0812 /* Observable.swift in Sources */,
 				EF8D2D3227E3BB76007A0812 /* ChildCoordinatorFactory.swift in Sources */,
+				EF8D2D6A27E5B36B007A0812 /* PaddingLabel.swift in Sources */,
 				EF8D2D3E27E3C3EB007A0812 /* ItemDetail.swift in Sources */,
 				EF8D2D3927E3BEC0007A0812 /* BakeryItemDetailChildCoordinator.swift in Sources */,
+				EF8D2D6E27E5C28A007A0812 /* ItemCellViewModel.swift in Sources */,
 				EF8D2D3B27E3C18C007A0812 /* MainCoordinator.swift in Sources */,
 				EF8D2D5E27E4BF21007A0812 /* NetworkProtocol.swift in Sources */,
+				EF8D2D6527E54103007A0812 /* ItemCell.swift in Sources */,
 				EF16F34927E25F2F00A14728 /* AppDelegate.swift in Sources */,
 				EF16F34B27E25F2F00A14728 /* SceneDelegate.swift in Sources */,
 				EF8D2D3727E3BEAC007A0812 /* BakeryItemMenuChildCoordinator.swift in Sources */,
+				EF8D2D6C27E5BB06007A0812 /* Utility.swift in Sources */,
 				EF8D2D2D27E3BA0C007A0812 /* BakeryItemMenuController.swift in Sources */,
+				EF8D2D6827E541FD007A0812 /* UIView + Extension.swift in Sources */,
 				EF8D2D4527E3E764007A0812 /* NetworkError.swift in Sources */,
 				EF8D2D2F27E3BA77007A0812 /* BakeryItemDetailController.swift in Sources */,
 				EF8D2D3427E3BC33007A0812 /* Coordinator.swift in Sources */,
