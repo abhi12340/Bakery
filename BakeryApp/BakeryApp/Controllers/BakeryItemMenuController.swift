@@ -51,7 +51,14 @@ class BakeryItemMenuController: UIViewController {
 extension BakeryItemMenuController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     private func setupBinding() {
+        view.bringSubviewToFront(activityIndicator)
         activityIndicator.startAnimating()
+        datasourceBinding()
+        errorBinding()
+    }
+    
+    private func datasourceBinding() {
+        
         viewmodel.datasource.subscribe { [weak self] result in
             DispatchQueue.main.async {
                 self?.activityIndicator.stopAnimating()
@@ -59,11 +66,14 @@ extension BakeryItemMenuController: UICollectionViewDelegate, UICollectionViewDa
                 self?.collectionView.reloadData()
             }
         }.disposed(by: disposeBag)
+    }
+    
+    private func errorBinding() {
         
-        viewmodel.error?.subscribe { message in
-            DispatchQueue.main.async { [weak self] in
+        viewmodel.error.subscribe { [weak self] message in
+            DispatchQueue.main.async {
                 self?.activityIndicator.stopAnimating()
-                Utility.showAlert(with: message)
+                self?.bakeryItemMenuChildCoordinator?.presentAlert(message: message)
             }
         }.disposed(by: disposeBag)
     }
@@ -103,10 +113,11 @@ extension BakeryItemMenuController: UICollectionViewDelegate, UICollectionViewDa
 
 
 extension BakeryItemMenuController: ItemCellDelegate {
+    
     func showDetails(indexPath: IndexPath?) {
         guard let indexPath = indexPath else {
             return
         }
-        print(itemlist[indexPath.item])
+        bakeryItemMenuChildCoordinator?.presentItemDetailVC(item: itemlist[indexPath.item])
     }
 }

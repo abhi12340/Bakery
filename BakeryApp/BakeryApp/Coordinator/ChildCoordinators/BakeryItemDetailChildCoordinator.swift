@@ -13,14 +13,14 @@ class BakeryItemDetailChildCoordinator : ChildCoordinator {
 
     weak var parentCoordinator: ParentCoordinator?
     var navigationController: UINavigationController
-    var name: String?
-
+    var item: Item?
     init(with _navigationController: UINavigationController){
         self.navigationController = _navigationController
     }
 
     func configureChildViewController() {
         let itemDetail = BakeryItemDetailController()
+        itemDetail.setupInital(data: item)
         itemDetail.isModalInPresentation = true
         itemDetail.bakeryItemDetailChildCoordinator = self
         self.navigationController.present(itemDetail, animated: true, completion: nil)
@@ -28,7 +28,7 @@ class BakeryItemDetailChildCoordinator : ChildCoordinator {
     
     func passParameter(value: Decodable) {
         guard let parameter = value as? ItemDetailParameter else { return }
-        name = parameter.name
+        item = parameter.item
     }
     
     func dismissItemDetails() {

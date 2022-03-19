@@ -16,7 +16,7 @@ class ItemMenuViewModel {
     }
     
     var datasource = Variable<[Item]>([])
-    var error: Variable<String>?
+    var error = Variable<String>("")
     
     func getItems() {
         networkService.request(routerRequest: ItemRequest.get,
@@ -25,7 +25,7 @@ class ItemMenuViewModel {
             case .success(let items):
                 self?.datasource.value = items
             case .failure(let error):
-                self?.error?.value = error.localizedDescription
+                self?.error.value = error.localizedDescription
             }
         }
     }

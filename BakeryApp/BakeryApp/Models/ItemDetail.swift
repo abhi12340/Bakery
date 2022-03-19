@@ -8,5 +8,5 @@
 import Foundation
 
 struct ItemDetailParameter: Decodable {
-    let name: String
+    let item: Item
 }

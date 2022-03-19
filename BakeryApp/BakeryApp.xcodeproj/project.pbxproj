@@ -40,6 +40,8 @@
 		EF8D2D6A27E5B36B007A0812 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D6927E5B36B007A0812 /* PaddingLabel.swift */; };
 		EF8D2D6C27E5BB06007A0812 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D6B27E5BB06007A0812 /* Utility.swift */; };
 		EF8D2D6E27E5C28A007A0812 /* ItemCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D6D27E5C28A007A0812 /* ItemCellViewModel.swift */; };
+		EF8D2D7027E5D610007A0812 /* ItemDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D6F27E5D610007A0812 /* ItemDetailsViewModel.swift */; };
+		EF8D2D7227E6082E007A0812 /* Expandable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2D7127E6082E007A0812 /* Expandable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		EF8D2D6927E5B36B007A0812 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		EF8D2D6B27E5BB06007A0812 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		EF8D2D6D27E5C28A007A0812 /* ItemCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellViewModel.swift; sourceTree = "<group>"; };
+		EF8D2D6F27E5D610007A0812 /* ItemDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewModel.swift; sourceTree = "<group>"; };
+		EF8D2D7127E6082E007A0812 /* Expandable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expandable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +232,7 @@
 			children = (
 				EF8D2D3D27E3C3EB007A0812 /* ItemDetail.swift */,
 				EF8D2D4E27E4AD19007A0812 /* Items.swift */,
+				EF8D2D7127E6082E007A0812 /* Expandable.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 			children = (
 				EF8D2D5527E4AF03007A0812 /* ItemMenuViewModel.swift */,
 				EF8D2D6D27E5C28A007A0812 /* ItemCellViewModel.swift */,
+				EF8D2D6F27E5D610007A0812 /* ItemDetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -444,9 +450,11 @@
 			files = (
 				EF8D2D6127E4C13A007A0812 /* MockURLProtocol.swift in Sources */,
 				EF8D2D4D27E3EA5D007A0812 /* ItemRequest.swift in Sources */,
+				EF8D2D7227E6082E007A0812 /* Expandable.swift in Sources */,
 				EF8D2D4B27E3E9C7007A0812 /* HttpMethods.swift in Sources */,
 				EF8D2D4727E3E7E9007A0812 /* NetworkConstants.swift in Sources */,
 				EF8D2D5627E4AF03007A0812 /* ItemMenuViewModel.swift in Sources */,
+				EF8D2D7027E5D610007A0812 /* ItemDetailsViewModel.swift in Sources */,
 				EF8D2D4327E3E73D007A0812 /* NetworkManager.swift in Sources */,
 				EF8D2D4F27E4AD19007A0812 /* Items.swift in Sources */,
 				EF8D2D4927E3E969007A0812 /* BakeryURLRequest.swift in Sources */,
