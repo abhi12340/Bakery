@@ -37,6 +37,7 @@ final class NetworkManager: NetworkProtocol {
                     guard let data = data,
                           let decodedJson = try routerRequest
                           .jsonParser(tyeof: T.self, data: data) else {
+                              completionHandler(.failure(.responseError))
                         return
                     }
                     completionHandler(.success(decodedJson))
