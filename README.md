@@ -12,3 +12,4 @@
 
 https://user-images.githubusercontent.com/29311597/159138607-82c5f1ed-b3ec-43d2-9db8-5a52eb46bdcc.mp4
 
+if you are seeing Blue card Api is not active any more
